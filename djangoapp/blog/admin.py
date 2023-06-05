@@ -1,6 +1,5 @@
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
-from django.urls import reverse
 from django.utils.safestring import mark_safe
 
 from blog.models import Tag, Category, Page, Post
