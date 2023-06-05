@@ -17,7 +17,7 @@ class MenuLinkInline(admin.TabularInline):
 
 @admin.register(SiteSetup)
 class SiteSetupAdmin(admin.ModelAdmin):
-    list_display = 'title', 'description'
+    list_display = ('title', 'description',)
     inlines = MenuLinkInline,
 
     def has_add_permission(self, request):
